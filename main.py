@@ -12,13 +12,13 @@ from sklearn.metrics import accuracy_score, r2_score
 
 #pip freeze > requirements.txt
 
-with open(r'C:\\Users\\nandi\\Desktop\\streamlit\\rfr.pkl', 'rb') as file:
+with open('rfr.pkl', 'rb') as file:
     rfr = pickle.load(file)
 
-rfc = joblib.load('C:\\Users\\nandi\\Desktop\\streamlit\\rfc.joblib')
+rfc = joblib.load('rfc.joblib')
 
-df_ad = pd.read_csv('C:\\Users\\nandi\\Desktop\\streamlit\\Advertising.csv')
-df_db = pd.read_csv('C:\\Users\\nandi\\Desktop\\streamlit\\diabetes2.csv')
+df_ad = pd.read_csv('Advertising.csv')
+df_db = pd.read_csv('diabetes2.csv')
 
 
 df_db_legend_labels = ['No Diabetes', 'Diabetes']
